@@ -137,9 +137,7 @@ Relaciona produtos às vendas (resolvendo relacionamento N:N).
 
 ## 🖼️ Modelo de Dados
 
-Adicione abaixo o print do modelo (Power BI ou diagrama):
-
-![Modelo de Dados](./images/modelo_dados.png)
+![diagram.png]([./images/modelo_dados.png](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/docs/diagram.png?raw=true))
 ________________________________________
 # 🔍 Análises Realizadas  
 
