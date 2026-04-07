@@ -137,7 +137,7 @@ Relaciona produtos às vendas (resolvendo relacionamento N:N).
 
 ## 🖼️ Modelo de Dados
 
-![diagram.png]([./images/modelo_dados.png](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/docs/diagram.png?raw=true))
+![Diagrama do Banco de Dados](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/docs/diagram.png?raw=true)
 ________________________________________
 # 🔍 Análises Realizadas  
 
