@@ -147,6 +147,13 @@ ________________________________________
 Os fornecedores apresentam comportamento semelhante, indicando que o problema não é isolado.
 
 ---
+### Performance - NebulaNetworks
+
+![Nebula](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/outputs/charts/nebula_networks_sales.png?raw=true)
+
+Observa-se uma tendência de queda consistente, reforçando o baixo desempenho do fornecedor ao longo dos anos.
+
+---
 ### Tendência geral de vendas
 ![Geral](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/outputs/charts/overall_sales.png?raw=true)
 
@@ -231,7 +238,7 @@ WITH Media_Vendas_Anteriores AS (
            strftime("%Y", data_venda) AS Ano,
            strftime("%m", data_venda) AS Mes
     FROM vendas
-    WHERE strftime("%Y", data_venda) != "2022" AND Mes = "11"
+    WHERE strftime("%Y", data_venda) != "2022" AND strftime("%m", data_venda) = "11"
     GROUP BY Ano
   )
 ),
@@ -242,7 +249,7 @@ Vendas_Atual AS (
            strftime("%Y", data_venda) AS Ano,
            strftime("%m", data_venda) AS Mes
     FROM vendas
-    WHERE strftime("%Y", data_venda) = "2022" AND Mes = "11"
+    WHERE strftime("%Y", data_venda) = "2022" AND strftime("%m", data_venda) = "11"
     GROUP BY Ano
   )
 )
