@@ -1,21 +1,28 @@
-# 📊 Análise de Vendas da Black Friday  
-**Insights Estratégicos com SQL para Tomada de Decisão**
-________________________________________
 ## 🧠 Sobre o Projeto  
-Este projeto tem como objetivo analisar o desempenho de vendas durante as últimas edições da Black Friday, identificando padrões, tendências e fatores que impactam os resultados.  
-A análise foi desenvolvida com foco em gerar insights acionáveis para apoiar decisões estratégicas de negócio.
-________________________________________
-## 🎯 Problema de Negócio
-Apesar de diversas ações terem sido executadas nas últimas Black Fridays, não havia uma análise aprofundada dos resultados.
+
+Este projeto tem como objetivo analisar o desempenho de vendas durante as últimas edições da Black Friday, identificando **padrões, tendências e fatores que impactam os resultados**.
+
+A análise foi desenvolvida com foco em gerar **insights acionáveis** para apoiar decisões estratégicas de negócio.
+
+---
+
+## 🎯 Problema de Negócio  
+
+Apesar de diversas ações terem sido executadas nas últimas Black Fridays, **não havia uma análise aprofundada dos resultados**.
+
 Isso dificultava responder perguntas como:
-*	As vendas estão crescendo ou caindo? 
-*	Algum fornecedor impacta negativamente os resultados? 
-*	Existem padrões sazonais que podem ser explorados? 
-________________________________________
-## 🛠️ Tecnologias Utilizadas
-*	SQL (SQLite) 
-*	Análise exploratória de dados 
-*	Modelagem de métricas 
+
+- As vendas estão crescendo ou caindo?  
+- Algum fornecedor impacta negativamente os resultados?  
+- Existem padrões sazonais que podem ser explorados?  
+
+---
+
+## 🛠️ Tecnologias Utilizadas  
+
+- SQL (SQLite)  
+- Análise exploratória de dados  
+- Modelagem de métricas
 ________________________________________
 ## 📂 Dataset
 
