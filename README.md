@@ -142,7 +142,7 @@ ________________________________________
 # 🔍 Análises Realizadas  
 
 ### Comparação entre fornecedores
-![Comparação](outputs/nebula_networks_sales_comparison.png)
+![Comparação](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/outputs/charts/nebula_networks_sales_comparison.png?raw=true)
 ---
 
 ## 📉 Performance de Fornecedores  
