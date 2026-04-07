@@ -8,7 +8,7 @@ A análise foi desenvolvida com foco em gerar **insights acionáveis** para apoi
 
 ## 🎯 Problema de Negócio  
 
-Apesar de diversas ações terem sido executadas nas últimas Black Fridays, **não havia uma análise aprofundada dos resultados**.
+Apesar de diversas ações terem sido executadas nas últimas Black Fridays, **não havia uma análise estruturada baseada em dados que permitisse identificar padrões de desempenho e oportunidades estratégicas.**
 
 Isso dificultava responder perguntas como:
 
@@ -137,11 +137,33 @@ Relaciona produtos às vendas (resolvendo relacionamento N:N).
 
 ## 🖼️ Modelo de Dados
 
-Adicione abaixo o print do modelo (Power BI ou diagrama):
-
-![Modelo de Dados](./images/modelo_dados.png)
+![Diagrama do Banco de Dados](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/docs/diagram.png?raw=true)
 ________________________________________
 # 🔍 Análises Realizadas  
+
+### Comparação entre fornecedores
+![Comparação](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/outputs/charts/nebula_networks_sales_comparison.png?raw=true)
+
+Os fornecedores apresentam comportamento semelhante, indicando que o problema não é isolado.
+
+---
+### Performance - NebulaNetworks
+
+![Nebula](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/outputs/charts/nebula_networks_sales.png?raw=true)
+
+Observa-se uma tendência de queda consistente, reforçando o baixo desempenho do fornecedor ao longo dos anos.
+
+---
+### Tendência geral de vendas
+![Geral](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/outputs/charts/overall_sales.png?raw=true)
+
+Existe uma queda consistente ao longo dos anos, sugerindo impacto de fatores externos.
+
+---
+### Sazonalidade
+![Sazonalidade](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/outputs/charts/overall_sales_comparison.png?raw=true)
+
+Os picos ocorrem em Novembro, Dezembro e Janeiro, com destaque inesperado para Maio.
 
 ---
 
@@ -152,7 +174,7 @@ ________________________________________
 - Tendência de queda contínua ao longo dos últimos 4 anos  
 
 📌 **Insight:**  
-Problemas podem estar relacionados a portfólio, precificação ou relevância dos produtos.
+Os dados indicam que o baixo desempenho está associado a fatores como posicionamento de produtos ou competitividade.
 
 ---
 
@@ -216,7 +238,7 @@ WITH Media_Vendas_Anteriores AS (
            strftime("%Y", data_venda) AS Ano,
            strftime("%m", data_venda) AS Mes
     FROM vendas
-    WHERE Ano != "2022" AND Mes = "11"
+    WHERE strftime("%Y", data_venda) != "2022" AND strftime("%m", data_venda) = "11"
     GROUP BY Ano
   )
 ),
@@ -227,7 +249,7 @@ Vendas_Atual AS (
            strftime("%Y", data_venda) AS Ano,
            strftime("%m", data_venda) AS Mes
     FROM vendas
-    WHERE Ano = "2022" AND Mes = "11"
+    WHERE strftime("%Y", data_venda) = "2022" AND strftime("%m", data_venda) = "11"
     GROUP BY Ano
   )
 )
