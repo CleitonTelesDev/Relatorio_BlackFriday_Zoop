@@ -8,7 +8,7 @@ A análise foi desenvolvida com foco em gerar **insights acionáveis** para apoi
 
 ## 🎯 Problema de Negócio  
 
-Apesar de diversas ações terem sido executadas nas últimas Black Fridays, **Não havia uma análise estruturada baseada em dados que permitisse identificar padrões de desempenho e oportunidades estratégicas.**.
+Apesar de diversas ações terem sido executadas nas últimas Black Fridays, **não havia uma análise estruturada baseada em dados que permitisse identificar padrões de desempenho e oportunidades estratégicas.**
 
 Isso dificultava responder perguntas como:
 
