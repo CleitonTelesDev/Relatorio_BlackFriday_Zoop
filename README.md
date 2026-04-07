@@ -241,9 +241,11 @@ SELECT
 FROM Vendas_Atual, Media_Vendas_Anteriores;
 ```
 
-📊 Exemplo de saída
-Média Histórica	Vendas Atual	Crescimento
-2049.5	3200	+56.14%
+## 📊 Exemplo de saída  
+
+| 📉 **Média Vendas Anteriores** | 📈 **Vendas Novembro Atual** | 🚀 **% Aumento** |
+|:-----------------------------:|:---------------------------:|:----------------:|
+| **2049.5**                    | **3200**                    | **56.14%**       |
 ________________________________________
 ✅ Conclusão
 •	Nenhum fornecedor isolado explica a queda nas vendas 
