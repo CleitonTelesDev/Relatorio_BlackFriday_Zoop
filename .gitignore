@@ -1,0 +1,20 @@
+# Banco de dados
+*.bak
+*.backup
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporários
+*.tmp
+*.temp
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Senhas e configurações
+.env
+*.secret.sql
