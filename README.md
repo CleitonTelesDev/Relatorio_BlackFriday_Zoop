@@ -276,12 +276,12 @@ ________________________________________
 
 ## 💼 Sobre Mim  
 
-*(coloque aqui)*  
+*(Cleiton Teles)*  
 
 Sou um profissional de dados focado em transformar dados em insights estratégicos.
 
 📫 Contato:
 
-- LinkedIn: (seu link)  
-- Email: (seu email)  
+- LinkedIn: (www.linkedin.com/in/cleitonteles)  
+- Email: (juantrick@gmail.com)  
 
