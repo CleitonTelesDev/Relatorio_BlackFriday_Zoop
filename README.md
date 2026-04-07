@@ -17,31 +17,30 @@ ________________________________________
 *	Análise exploratória de dados 
 *	Modelagem de métricas 
 ________________________________________
-📂 Dataset
+## 📂 Dataset
 
 O dataset foi estruturado em um modelo relacional, contendo tabelas de fatos e dimensões para suportar análises de vendas.
 
-🧠 Modelagem de Dados
-
+### 🧠 Modelagem de Dados  
 O modelo segue o padrão Star Schema (Esquema Estrela), garantindo melhor performance e organização das análises.
 
-Tabela Fato: vendas
-Tabela Ponte: itens_venda
-Tabelas Dimensão: clientes, produtos, categorias, marcas, fornecedores
-🧾 Tabela Fato
-🛒 vendas
+Tabela Fato: vendas  
+Tabela Ponte: itens_venda  
+Tabelas Dimensão: clientes, produtos, categorias, marcas, fornecedores  
+🧾 Tabela Fato  
+🛒 vendas  
 
-Tabela principal contendo as transações de vendas.
+**Tabela principal contendo as transações de vendas.**
 
-Coluna	Tipo	Descrição
-id_venda	INTEGER	Identificador da venda
-data_venda	DATE	Data da venda
-total_venda	REAL	Valor total da venda
-cliente_id	INTEGER	Referência ao cliente
-🔗 Tabela Ponte
+Coluna	Tipo	Descrição  
+id_venda	INTEGER	Identificador da venda  
+data_venda	DATE	Data da venda  
+total_venda	REAL	Valor total da venda  
+cliente_id	INTEGER	Referência ao cliente  
+🔗 Tabela Ponte  
 📦 itens_venda
 
-Relaciona produtos às vendas (resolvendo relacionamento N:N).
+**Relaciona produtos às vendas (resolvendo relacionamento N:N).**
 
 Coluna	Tipo	Descrição
 venda_id	INTEGER	Referência à venda
