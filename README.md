@@ -238,7 +238,8 @@ SELECT
     (Vendas_Atual.Qtd_Vendas_Atual - Media_Vendas_Anteriores.Media_Vendas) 
     / Media_Vendas_Anteriores.Media_Vendas * 100, 2
   ) || "%" AS Porcentagem
-FROM Vendas_Atual, Media_Vendas_Anteriores;```
+FROM Vendas_Atual, Media_Vendas_Anteriores;
+```
 
 📊 Exemplo de saída
 Média Histórica	Vendas Atual	Crescimento
