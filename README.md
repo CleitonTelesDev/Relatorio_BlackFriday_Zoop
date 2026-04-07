@@ -1,5 +1,5 @@
 # 📊 Análise de Vendas da Black Friday  
-** Insights Estratégicos com SQL para Tomada de Decisão **
+**Insights Estratégicos com SQL para Tomada de Decisão**
 ________________________________________
 ## 🧠 Sobre o Projeto  
 Este projeto tem como objetivo analisar o desempenho de vendas durante as últimas edições da Black Friday, identificando padrões, tendências e fatores que impactam os resultados.  
