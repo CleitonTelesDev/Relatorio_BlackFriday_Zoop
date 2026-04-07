@@ -141,45 +141,74 @@ Adicione abaixo o print do modelo (Power BI ou diagrama):
 
 ![Modelo de Dados](./images/modelo_dados.png)
 ________________________________________
-🔍 Análises Realizadas
-📉 Performance de Fornecedores
-•	O fornecedor NebulaNetworks apresentou a pior performance recente 
-•	Apenas 529 vendas na última Black Friday analisada 
-•	Tendência de queda contínua ao longo dos últimos 4 anos 
-📌 Insight:
+# 🔍 Análises Realizadas  
+
+---
+
+## 📉 Performance de Fornecedores  
+
+- O fornecedor **NebulaNetworks** apresentou a pior performance recente  
+- Apenas **529 vendas na última Black Friday analisada**  
+- Tendência de queda contínua ao longo dos últimos 4 anos  
+
+📌 **Insight:**  
 Problemas podem estar relacionados a portfólio, precificação ou relevância dos produtos.
-________________________________________
-🤝 Comparação entre Fornecedores
-•	Todos os principais fornecedores apresentaram comportamento semelhante ao longo do tempo 
-📌 Insight:
-O fornecedor não é o principal fator de variação nas vendas
-________________________________________
-📊 Tendência Geral de Vendas
-•	Identificada uma queda nas vendas ao longo dos últimos 4 anos 
-📌 Insight:
+
+---
+
+## 🤝 Comparação entre Fornecedores  
+
+- Todos os principais fornecedores apresentaram comportamento semelhante ao longo do tempo  
+
+📌 **Insight:**  
+O fornecedor não é o principal fator de variação nas vendas.
+
+---
+
+## 📊 Tendência Geral de Vendas  
+
+- Identificada uma queda nas vendas ao longo dos últimos 4 anos  
+
+📌 **Insight:**  
 Fatores externos podem estar impactando:
-•	Economia 
-•	Concorrência 
-•	Mudança no comportamento do consumidor 
-________________________________________
-📅 Sazonalidade de Vendas
+
+- Economia  
+- Concorrência  
+- Mudança no comportamento do consumidor  
+
+---
+
+## 📅 Sazonalidade de Vendas  
+
 Meses com maior volume de vendas:
-•	Janeiro (1) 
-•	Novembro (11) 
-•	Dezembro (12) 
-📌 Destaque:
-•	Mês 5 (Maio) apresenta crescimento consistente inesperado 
-📌 Insight:
+
+- Janeiro (1)  
+- Novembro (11)  
+- Dezembro (12)  
+
+📌 **Destaque:**
+
+- Mês 5 (Maio) apresenta crescimento consistente inesperado  
+
+📌 **Insight:**  
 Existe oportunidade de campanhas estratégicas fora da Black Friday.
-________________________________________
-🔥 Principais Insights
-•	📉 Queda consistente nas vendas ao longo dos anos 
-•	🤝 Fornecedores não impactam significativamente o volume 
-•	📅 Forte sazonalidade com oportunidade fora do período tradicional 
-•	⚠️ Influência provável de fatores externos no desempenho 
-________________________________________
-📐 Métrica de Acompanhamento (SQL)
+
+---
+
+## 🔥 Principais Insights  
+
+- 📉 Queda consistente nas vendas ao longo dos anos  
+- 🤝 Fornecedores não impactam significativamente o volume  
+- 📅 Forte sazonalidade com oportunidade fora do período tradicional  
+- ⚠️ Influência provável de fatores externos no desempenho  
+
+---
+
+## 📐 Métrica de Acompanhamento (SQL)  
+
 Para avaliar rapidamente o desempenho da Black Friday atual em relação ao histórico:
+
+```sql
 WITH Media_Vendas_Anteriores AS (
   SELECT AVG(Qtd_Vendas) AS Media_Vendas
   FROM (
@@ -209,7 +238,7 @@ SELECT
     (Vendas_Atual.Qtd_Vendas_Atual - Media_Vendas_Anteriores.Media_Vendas) 
     / Media_Vendas_Anteriores.Media_Vendas * 100, 2
   ) || "%" AS Porcentagem
-FROM Vendas_Atual, Media_Vendas_Anteriores;
+FROM Vendas_Atual, Media_Vendas_Anteriores;```
 
 📊 Exemplo de saída
 Média Histórica	Vendas Atual	Crescimento
