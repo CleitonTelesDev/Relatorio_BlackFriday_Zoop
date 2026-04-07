@@ -144,6 +144,9 @@ ________________________________________
 ### Comparação entre fornecedores
 ![Comparação](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/outputs/charts/nebula_networks_sales_comparison.png?raw=true)
 ---
+### Tendência geral de vendas
+![Geral](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/outputs/charts/overall_sales.png?raw=true)
+---
 
 ## 📉 Performance de Fornecedores  
 
