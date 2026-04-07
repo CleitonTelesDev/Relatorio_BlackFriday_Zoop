@@ -167,7 +167,7 @@ Os picos ocorrem em Novembro, Dezembro e Janeiro, com destaque inesperado para M
 - Tendência de queda contínua ao longo dos últimos 4 anos  
 
 📌 **Insight:**  
-Problemas podem estar relacionados a portfólio, precificação ou relevância dos produtos.
+Os dados indicam que o baixo desempenho está associado a fatores como posicionamento de produtos ou competitividade.
 
 ---
 
@@ -231,7 +231,7 @@ WITH Media_Vendas_Anteriores AS (
            strftime("%Y", data_venda) AS Ano,
            strftime("%m", data_venda) AS Mes
     FROM vendas
-    WHERE Ano != "2022" AND Mes = "11"
+    WHERE strftime("%Y", data_venda) != "2022" AND Mes = "11"
     GROUP BY Ano
   )
 ),
@@ -242,7 +242,7 @@ Vendas_Atual AS (
            strftime("%Y", data_venda) AS Ano,
            strftime("%m", data_venda) AS Mes
     FROM vendas
-    WHERE Ano = "2022" AND Mes = "11"
+    WHERE strftime("%Y", data_venda) = "2022" AND Mes = "11"
     GROUP BY Ano
   )
 )
