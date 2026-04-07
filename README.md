@@ -247,29 +247,41 @@ FROM Vendas_Atual, Media_Vendas_Anteriores;
 |:-----------------------------:|:---------------------------:|:----------------:|
 | **2049.5**                    | **3200**                    | **56.14%**       |
 ________________________________________
-✅ Conclusão
-•	Nenhum fornecedor isolado explica a queda nas vendas 
-•	Existe uma tendência geral negativa que precisa ser investigada 
-•	O comportamento sazonal abre oportunidades estratégicas 
-________________________________________
-🚀 Próximos Passos
-•	Analisar impacto de: 
-o	Categorias 
-o	Marcas 
-•	Criar dashboards interativos 
-•	Desenvolver novas métricas de performance 
-•	Investigar fatores externos (mercado/economia) 
-________________________________________
-▶️ Como Reproduzir
-1.	Carregue o dataset em um banco SQLite 
-2.	Execute as queries SQL disponíveis 
-3.	Analise os resultados 
-________________________________________
-💼 Sobre Mim
-(coloque aqui)
+## ✅ Conclusão  
+
+- Nenhum fornecedor isolado explica a queda nas vendas  
+- Existe uma tendência geral negativa que precisa ser investigada  
+- O comportamento sazonal abre oportunidades estratégicas  
+
+---
+
+## 🚀 Próximos Passos  
+
+- Analisar impacto de:
+  - Categorias  
+  - Marcas  
+- Criar dashboards interativos  
+- Desenvolver novas métricas de performance  
+- Investigar fatores externos (mercado/economia)  
+
+---
+
+## ▶️ Como Reproduzir  
+
+1. Carregue o dataset em um banco SQLite  
+2. Execute as queries SQL disponíveis  
+3. Analise os resultados  
+
+---
+
+## 💼 Sobre Mim  
+
+*(coloque aqui)*  
+
 Sou um profissional de dados focado em transformar dados em insights estratégicos.
 
 📫 Contato:
-- LinkedIn: (seu link)
-- Email: (seu email)
+
+- LinkedIn: (seu link)  
+- Email: (seu email)  
 
