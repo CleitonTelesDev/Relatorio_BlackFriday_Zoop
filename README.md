@@ -141,6 +141,8 @@ Relaciona produtos às vendas (resolvendo relacionamento N:N).
 ________________________________________
 # 🔍 Análises Realizadas  
 
+### Comparação entre fornecedores
+![Comparação](outputs/nebula_networks_sales_comparison.png)
 ---
 
 ## 📉 Performance de Fornecedores  
