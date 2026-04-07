@@ -143,9 +143,21 @@ ________________________________________
 
 ### Comparação entre fornecedores
 ![Comparação](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/outputs/charts/nebula_networks_sales_comparison.png?raw=true)
+
+Os fornecedores apresentam comportamento semelhante, indicando que o problema não é isolado.
+
 ---
 ### Tendência geral de vendas
 ![Geral](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/outputs/charts/overall_sales.png?raw=true)
+
+Existe uma queda consistente ao longo dos anos, sugerindo impacto de fatores externos.
+
+---
+### Sazonalidade
+![Sazonalidade](https://github.com/CleitonTelesDev/Relatorio_BlackFriday_Zoop/blob/main/outputs/charts/overall_sales_comparison.png?raw=true)
+
+Os picos ocorrem em Novembro, Dezembro e Janeiro, com destaque inesperado para Maio.
+
 ---
 
 ## 📉 Performance de Fornecedores  
