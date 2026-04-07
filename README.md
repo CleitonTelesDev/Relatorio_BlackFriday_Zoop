@@ -19,72 +19,120 @@ ________________________________________
 ________________________________________
 ## 📂 Dataset
 
-O dataset foi estruturado em um modelo relacional, contendo tabelas de fatos e dimensões para suportar análises de vendas.
+O dataset foi estruturado em um modelo relacional, contendo tabelas de fatos, dimensões e uma tabela ponte para suportar análises de vendas.
 
-### 🧠 Modelagem de Dados  
-O modelo segue o padrão Star Schema (Esquema Estrela), garantindo melhor performance e organização das análises.
+---
 
-Tabela Fato: vendas  
-Tabela Ponte: itens_venda  
-Tabelas Dimensão: clientes, produtos, categorias, marcas, fornecedores  
-🧾 Tabela Fato  
-🛒 vendas  
+## 🧠 Modelagem de Dados
 
-**Tabela principal contendo as transações de vendas.**
+O modelo segue o padrão **Star Schema (Esquema Estrela)**, garantindo melhor performance e organização das análises.
 
-Coluna	Tipo	Descrição  
-id_venda	INTEGER	Identificador da venda  
-data_venda	DATE	Data da venda  
-total_venda	REAL	Valor total da venda  
-cliente_id	INTEGER	Referência ao cliente  
-🔗 Tabela Ponte  
-📦 itens_venda
+- 🧾 **Tabela Fato:** vendas  
+- 🔗 **Tabela Ponte:** itens_venda  
+- 📊 **Tabelas Dimensão:** clientes, produtos, categorias, marcas, fornecedores  
 
-**Relaciona produtos às vendas (resolvendo relacionamento N:N).**
+---
 
-Coluna	Tipo	Descrição
-venda_id	INTEGER	Referência à venda
-produto_id	INTEGER	Referência ao produto
-📊 Tabelas Dimensão
-👤 clientes
-Coluna	Tipo	Descrição
-id_cliente	INTEGER	Identificador do cliente
-nome_cliente	TEXT	Nome do cliente
-idade	INTEGER	Idade
-endereco	TEXT	Endereço
-📦 produtos
-Coluna	Tipo	Descrição
-id_produto	INTEGER	Identificador do produto
-nome_produto	TEXT	Nome do produto
-preco	REAL	Preço do produto
-categoria_id	INTEGER	Referência à categoria
-marca_id	TEXT	Referência à marca
-fornecedor_id	INTEGER	Referência ao fornecedor
-data_estoque	DATE	Data de entrada em estoque
-status	TEXT	Status do produto
-🏷️ categorias
-Coluna	Tipo	Descrição
-id_categoria	TEXT	Identificador da categoria
-nome_categoria	TEXT	Nome da categoria
-🏢 fornecedores
-Coluna	Tipo	Descrição
-id_fornecedor	INTEGER	Identificador do fornecedor
-nome	TEXT	Nome do fornecedor
-contato	TEXT	Contato
-🏷️ marcas
-Coluna	Tipo	Descrição
-id_marca	TEXT	Identificador da marca
-nome	TEXT	Nome da marca
-🔗 Relacionamentos
-vendas.cliente_id → clientes.id_cliente
-itens_venda.venda_id → vendas.id_venda
-itens_venda.produto_id → produtos.id_produto
-produtos.categoria_id → categorias.id_categoria
-produtos.marca_id → marcas.id_marca
-produtos.fornecedor_id → fornecedores.id_fornecedor
-🖼️ Modelo de Dados
+## 🧾 Tabela Fato
 
-👉 Adicione aqui o print do seu modelo (Power BI / diagrama)
+### 🛒 vendas
+
+Tabela principal contendo as transações de vendas.
+
+| Coluna       | Tipo    | Descrição |
+|-------------|--------|----------|
+| id_venda    | INTEGER | Identificador da venda |
+| data_venda  | DATE    | Data da venda |
+| total_venda | REAL    | Valor total da venda |
+| cliente_id  | INTEGER | Referência ao cliente |
+
+---
+
+## 🔗 Tabela Ponte
+
+### 📦 itens_venda
+
+Relaciona produtos às vendas (resolvendo relacionamento N:N).
+
+| Coluna      | Tipo    | Descrição |
+|------------|--------|----------|
+| venda_id   | INTEGER | Referência à venda |
+| produto_id | INTEGER | Referência ao produto |
+
+---
+
+## 📊 Tabelas Dimensão
+
+### 👤 clientes
+
+| Coluna        | Tipo    | Descrição |
+|--------------|--------|----------|
+| id_cliente   | INTEGER | Identificador do cliente |
+| nome_cliente | TEXT    | Nome do cliente |
+| idade        | INTEGER | Idade |
+| endereco     | TEXT    | Endereço |
+
+---
+
+### 📦 produtos
+
+| Coluna         | Tipo    | Descrição |
+|---------------|--------|----------|
+| id_produto    | INTEGER | Identificador do produto |
+| nome_produto  | TEXT    | Nome do produto |
+| preco         | REAL    | Preço do produto |
+| categoria_id  | INTEGER | Referência à categoria |
+| marca_id      | TEXT    | Referência à marca |
+| fornecedor_id | INTEGER | Referência ao fornecedor |
+| data_estoque  | DATE    | Data de entrada em estoque |
+| status        | TEXT    | Status do produto |
+
+---
+
+### 🏷️ categorias
+
+| Coluna          | Tipo | Descrição |
+|----------------|------|----------|
+| id_categoria   | TEXT | Identificador da categoria |
+| nome_categoria | TEXT | Nome da categoria |
+
+---
+
+### 🏢 fornecedores
+
+| Coluna         | Tipo    | Descrição |
+|---------------|--------|----------|
+| id_fornecedor | INTEGER | Identificador do fornecedor |
+| nome          | TEXT    | Nome do fornecedor |
+| contato       | TEXT    | Contato |
+
+---
+
+### 🏷️ marcas
+
+| Coluna   | Tipo | Descrição |
+|----------|------|----------|
+| id_marca | TEXT | Identificador da marca |
+| nome     | TEXT | Nome da marca |
+
+---
+
+## 🔗 Relacionamentos
+
+- vendas.cliente_id → clientes.id_cliente  
+- itens_venda.venda_id → vendas.id_venda  
+- itens_venda.produto_id → produtos.id_produto  
+- produtos.categoria_id → categorias.id_categoria  
+- produtos.marca_id → marcas.id_marca  
+- produtos.fornecedor_id → fornecedores.id_fornecedor  
+
+---
+
+## 🖼️ Modelo de Dados
+
+Adicione abaixo o print do modelo (Power BI ou diagrama):
+
+![Modelo de Dados](./images/modelo_dados.png)
 ________________________________________
 🔍 Análises Realizadas
 📉 Performance de Fornecedores
